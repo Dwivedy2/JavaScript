@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1 {
+            font-size: 64px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #fff;
+            text-shadow: 2px 2px 5px #000;
+        }
+        section {
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background-image: 
+            linear-gradient(rgb(0, 0, 0, 0.3),rgb(0, 0, 0, 0.3)),
+            url('https://images.pexels.com/photos/17867773/pexels-photo-17867773/free-photo-of-buck-and-deer-on-grassland.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+        .section-2 {
+            background-image: 
+            linear-gradient(rgb(0, 0, 0, 0.3),rgb(0, 0, 0, 0.3)),
+            url('https://images.pexels.com/photos/16652251/pexels-photo-16652251/free-photo-of-woman-standing-with-camera-among-flowers.jpeg');
+        }
+        .section-3 {
+            background-image: 
+            linear-gradient(rgb(0, 0, 0, 0.3),rgb(0, 0, 0, 0.3)),
+            url('https://images.pexels.com/photos/2977239/pexels-photo-2977239.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+        }
+        .section-4 {
+            background-image: 
+            linear-gradient(rgb(0, 0, 0, 0.3),rgb(0, 0, 0, 0.3)),
+            url('https://images.pexels.com/photos/20568187/pexels-photo-20568187/free-photo-of-mehrazin.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+        }
+    </style>
+</head>
+<body>
+    <section class="section-1">
+        <h1>First Div</h1>
+    </section>
+    <section class="section-2">
+        <h1>Second Div</h1>
+    </section>
+    <section class="section-3">
+        <h1>Third Div</h1>
+    </section>
+    <section class="section-4">
+        <h1>Fourth Div</h1>
+    </section>
+</body>
+</html>
