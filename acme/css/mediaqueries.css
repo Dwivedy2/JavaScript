@@ -1,0 +1,55 @@
+/* Media queries */
+@media(max-width: 768px) {
+
+    /* Header */
+    header nav li,
+    header nav,
+    #boxes .box,
+    #main-col,
+    #sidebar {
+        float: none;
+        text-align: center;
+    }
+
+    header #branding {
+        display: block;
+        text-align: center;
+    }
+
+    header {
+        padding-bottom: 20px;
+    }
+
+    /* Showcase */
+    #showcase h1 {
+        margin-top: 40px;
+    }
+
+    /* Newsletter */
+    #newsletter form,
+    #newsletter h1 {
+        float: none;
+    }
+
+    #newsletter form, #newsletter {
+        padding-top: 0;
+    }
+
+    #newsletter form .button_1{
+        margin-top: 5px;
+    }
+
+    .button_1{
+        width: 100%;
+    }
+
+    #newsletter input[type="email"] {
+        width: 100%;
+    }
+
+    /* Boxes */
+    #boxes .box {
+        width: 100%;
+    }
+    
+}
