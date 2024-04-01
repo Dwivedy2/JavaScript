@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Loader</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background-color: #191851;
+        }
+        html {
+            font-size: 62.5%;
+        }
+        .loader {
+            width: 20rem;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            background-color: #865dff;
+            position: relative;
+            animation: rotation 2s linear infinite;
+        }
+        /* adding a dark div inside */
+        .loader::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #191851;
+            width: 17rem;
+            aspect-ratio: 1;
+            border-radius: 50%;
+        }
+        /* adding a puff */
+        .loader::after {
+            content: "";
+            position: absolute;
+            top: -22px;
+            left: 64px;
+            background-color: #865dff;
+            width: 5rem;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            box-shadow: 0 0 1rem #865dff,  0 0 1.5rem #865dff,  0 0 2rem #865dff,  0 0 2.5rem #865dff,  0 0 3rem #865dff;
+        }
+
+        /* animation */
+        @keyframes rotation {
+            0% {
+                rotate: 360deg;
+            }
+            25% {
+                rotate: 270deg;
+            }
+            50% {
+                rotate: 180deg;
+            }
+            75% {
+                rotate: 90deg;
+            }
+            100% {
+                rotate: 0deg;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="loader"></div>
+</body>
+</html>
