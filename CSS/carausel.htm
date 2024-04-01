@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carausel Effect</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        html {
+            font-size: 62.5%;
+        }
+        .container-img {
+            width: 60vw;
+            height: 50rem;
+            border-radius: 1rem;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            background-image: url('https://i0.wp.com/picjumbo.com/wp-content/uploads/magical-spring-forest-scenery-during-morning-breeze-free-photo.jpg?w=600&quality=80');
+            background-size: cover;
+            animation: gallery 20s linear infinite;
+        }
+        @keyframes gallery {
+            0% {
+                background-image: url('https://i0.wp.com/picjumbo.com/wp-content/uploads/magical-spring-forest-scenery-during-morning-breeze-free-photo.jpg?w=600&quality=80');
+                background-size: cover;
+            }
+            20% {
+                background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtnvAOajH9gS4C30cRF7rD_voaTAKly2Ntaw&usqp=CAU');
+                background-size: cover;
+            }
+            40% {
+                background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgkdTlmpuqzu3aHd79dpSPT6bKTjaL_bP-Zg&usqp=CAU');
+                background-size: cover;
+            }
+            60% {
+                background-image: url('https://www.shutterstock.com/image-photo/waterfall-iceland-seljalandsfoss-600nw-165106163.jpg');
+                background-size: cover;
+            }
+            80% {
+                background-image: url('https://cdn.pixabay.com/photo/2013/11/26/11/27/niagara-falls-218591_640.jpg');
+                background-size: cover;
+            }
+            100% {
+                background-image: url('https://static.toiimg.com/thumb/msid-92006818,width-748,height-499,resizemode=4,imgsize-199428/.jpg');
+                background-size: cover;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-img"></div>
+</body>
+</html>
