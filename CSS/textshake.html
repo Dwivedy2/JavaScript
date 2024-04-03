@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap"
+      rel="stylesheet"
+    />
+    <title>Shake Text</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        background-color: #181951;
+        display: grid;
+        place-items: center;
+      }
+      h1 {
+        font-family: "Bungee Spice", sans-serif;
+        font-size: 48px;
+        color: #865dff;
+        text-transform: uppercase;
+        text-align: center;
+        text-shadow: 5px 5px 10px rgb(0, 0, 0.4);
+        animation: shake 4s linear infinite;
+      }
+      @keyframes shake {
+        0% {
+            rotate: -30deg;
+        }
+        50% {
+            rotate: 30deg;
+        }
+        100% {
+            rotate: -30deg;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      I am <br />
+      Unstoppable
+    </h1>
+  </body>
+</html>
