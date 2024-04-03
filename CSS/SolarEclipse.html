@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Eclipse</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        background-color: #181951;
+        display: grid;
+        place-items: center;
+      }
+      .box {
+        width: 500px;
+        aspect-ratio: 1;
+        background-color: #e9b824;
+        border-radius: 5px;
+        display: grid;
+        place-items: center;
+        animation: changecolor 8s ease-in-out infinite alternate-reverse;
+      }
+      .sun {
+        width: 200px;
+        aspect-ratio: 1;
+        background-color: orangered;
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;        
+      }
+      .sun::before {
+        content: "";
+        position: absolute;
+        width: 190px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background-color: rgb(27, 26, 26);
+        top: 5px;
+        left: 5px;
+        animation: solareclipse 8s ease-in-out infinite alternate-reverse;
+      }
+      @keyframes solareclipse {
+        0% {
+            left: -210px;
+        }
+        50% {
+            left: 5px;
+        }
+        100% {
+            left: 210px;
+        }
+      }
+      @keyframes changecolor {
+        50% {
+            background-color: rgb(27, 26, 26);  
+        }
+      }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="sun"></div>
+    </div>
+</body>
+</html>
